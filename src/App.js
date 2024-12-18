@@ -40,14 +40,13 @@ export default function App() {
     window.localStorage.setItem("list", JSON.stringify(friendList));
   }, [friendList]);
 
-  console.log(2);
   function handleAddFriend(friend) {
     setFriendList((f) => [...f, friend]);
     setShowForm((s) => !s);
   }
 
   function handleNewFriend() {
-    setShowForm((s) => !s);
+    setShowForm((showForm) => !showForm);
   }
 
   function handleSelection(friend) {

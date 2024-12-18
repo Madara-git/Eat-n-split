@@ -6,8 +6,6 @@ export function FriendsList({
   selectedFriend,
   deleteFirend,
 }) {
-  console.log(friendList);
-
   return (
     <>
       {friendList.length ? (

@@ -21,7 +21,6 @@ export function FormAddFriend({ onAddFriend }) {
       image: `${image}?=${id}`,
       balance: 0,
     };
-    console.log(newFriend);
     onAddFriend(newFriend);
     setName("");
     setImage("https://i.pravatar.cc/48");
@@ -43,6 +42,7 @@ export function FormAddFriend({ onAddFriend }) {
 
       <label>Image URL</label>
       <input
+        disabled
         value={image}
         onChange={(e) => setImage(e.target.value)}
         type="text"

@@ -7,7 +7,6 @@ export function Friend({
   deleteFirend,
 }) {
   const isSelected = friend.id === selectedFriend?.id;
-  console.log(friend);
   return (
     <li className={isSelected ? "selected" : ""}>
       <img src={friend.image} alt={friend.name} />
